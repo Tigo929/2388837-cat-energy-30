@@ -1,5 +1,18 @@
 .header {
-  background-color: #663399;
+  background-color: lightsteelblue;
   color: #ffffff;
   padding: 10px 15px;
+}
+
+.header__btn-hamburger-and-exit{
+  border: none;
+  background: none;
+
+  @media (min-width:768px) {
+    display: none;
+  }
+
+  @media (min-width:1440px) {
+    display: none;
+  }
 }
