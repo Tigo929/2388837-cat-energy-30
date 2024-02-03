@@ -1,3 +1,4 @@
+
 .advantages__list {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,6 @@
 
 .advantages__item {
     @include wh(280px);
-    margin: 0 auto;
     padding: 26px 2px 20px 20px;
     background-color: $bg-silver;
 

@@ -1,0 +1,17 @@
+.subtitle {
+    @include font (36px,40px,left);
+    color: $color-title;
+    text-transform: none;
+
+    @media (min-width: $tablet-width) {
+        @include font (60px,60px,left);
+        color: $color-title;
+        text-transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        @include font (60px,60px,left);
+        color: $color-title;
+        text-transform: none;
+    }
+}
