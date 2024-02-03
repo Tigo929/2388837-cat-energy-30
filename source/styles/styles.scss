@@ -2,12 +2,16 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/mixin.scss";
+
 
 /* BLOCKS */
 // header
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 // main-index
+@import "./blocks/normalize.scss";
 @import "./blocks/main-index.scss";
 @import "./blocks/functional-eat.scss";
 @import "./blocks/title.scss";
@@ -16,11 +20,11 @@
 @import "./blocks/link-stoke.scss";
 @import "./blocks/desc-stoke.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/normalize.scss";
 @import "./blocks/subtitle.scss";
 @import "./blocks/what-works.scss";
 @import "./blocks/living-example.scss";
 @import "./blocks/welcome-deller.scss";
+@import "./blocks/color-title.scss";
 // footer
 @import "./blocks/footer.scss";
 

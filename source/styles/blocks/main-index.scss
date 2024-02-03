@@ -1,0 +1,10 @@
+.main-index__functional-eat {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+    }
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
+}

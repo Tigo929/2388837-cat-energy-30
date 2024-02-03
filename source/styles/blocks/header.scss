@@ -1,18 +1,94 @@
 .header {
-  background-color: lightsteelblue;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding: 13px 0 14px 0;
+  position: static;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    position: static;
+  }
 }
 
-.header__btn-hamburger-and-exit{
+.header::after {
+  content: "";
+  @include wh(100%, 315px);
+  background-image: linear-gradient($bg-green, $bg-green),-webkit-image-set(
+    url('../../images/functional-eat/phone-bg-cat@1x.webp') 1x,
+    url('../../images/functional-eat/phone-bg-cat@2x.webp') 2x);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-position: 0px 14px, center 13px;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
+}
+
+.header__global-wrapper {
+  @include wh(279px);
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+  @include wh(auto);
+    display: block;
+    align-items: left;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+  @include wh(auto);
+    display: block;
+    align-items: left;
+    margin: 0;
+  }
+}
+.header__icon-logo {
+  margin: 0 55px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.header__text-logo {
+  margin: 0 65px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.header__btn-hamburger-and-exit {
   border: none;
   background: none;
+  padding: 0;
 
-  @media (min-width:768px) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 
-  @media (min-width:1440px) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
+

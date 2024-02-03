@@ -1,3 +1,8 @@
 .btn-stoke{
+    @include font(16px,20px);
+    background-color: $bg-green;
+    color: $color-white;
+    text-align: center;
+    border: 0;
     cursor: pointer;
 }
