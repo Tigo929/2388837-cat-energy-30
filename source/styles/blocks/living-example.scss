@@ -1,0 +1,96 @@
+.living-example {
+  position: relative;
+  padding: 0 0 19px 0;
+}
+
+.living-example::after {
+  @include wh (100%,100%);
+  content: "";
+  background-color: $bg-section;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.living-example__global-wrapper {
+  @include wh(280px);
+  margin: 0 auto 21px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.living-example__title {
+  @include wh(263px);
+  margin: 0 auto 39px auto;
+}
+
+.living-example__desc {
+  @include wh(290px);
+  margin: 0 0 19px 0;
+  padding: 0 0 0 7px;
+}
+
+.living-example__container {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  gap: 32px;
+  width: 265px;
+  margin: 0 auto 34px auto;
+}
+
+.living-example-wrapper {
+  width: 124px;
+  min-height: 56px;
+  position: relative;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 3px;
+}
+
+.living-example__small-title {
+  @include font (24px,24px,left);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.living-example__desc-title {
+  @include font (12px,100%,center);
+  background-color: $bg-section;
+  position: absolute;
+
+  text-transform: none;
+}
+
+.living-example__desc-loss {
+  @include wh (88px);
+  bottom: -16px;
+  right: 16px;
+}
+
+.living-example__desc-loss-span {
+  display: block;
+}
+
+.living-example__desc-time {
+  @include wh (88px);
+  bottom: -16px;
+  right: 16px;
+}
+
+.living-example__desc-time-span {
+  display: block;
+}
+
+.living-example__price-desc {
+  @include font (14px,20px);
+  @include wh (202px);
+  margin: 0 auto 20px auto;
+  padding: 0 0 0 16px;
+}

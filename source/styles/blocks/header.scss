@@ -35,20 +35,19 @@
 }
 
 .header__global-wrapper {
-  @include wh(279px);
+  @include wh(295px);
+  margin: 0 auto;
+  padding: 0 0 0 16px;
   display: flex;
   align-items: center;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-  @include wh(auto);
     display: block;
     align-items: left;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-  @include wh(auto);
     display: block;
     align-items: left;
     margin: 0;

@@ -1,11 +1,11 @@
 .desck-size-height {
-    @include font(14px, 14px);
+  @include font(14px, 14px);
 
-    @media (min-width: $tablet-width) {
-        @include font(20px, 20px);
-    }
+  @media (min-width: $tablet-width) {
+    @include font(20px, 20px);
+  }
 
-    @media (min-width: $desktop-width) {
-        @include font(20px, 20px);
-    }
+  @media (min-width: $desktop-width) {
+    @include font(20px, 20px);
+  }
 }

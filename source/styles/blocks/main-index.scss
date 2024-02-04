@@ -1,36 +1,38 @@
 .main-index__functional-eat {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    @media (min-width: $tablet-width) {
-        margin: 0;
-    }
-    @media (min-width: $desktop-width) {
-        margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-index__advantages {
-    @include wh(280px);
-    margin: 0 auto 21px auto;
+  @include wh(280px);
+  margin: 0 auto 24px auto;
 
-    @media (min-width: $tablet-width) {
-        margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .main-index__what-works {
-    @include wh(280px);
-    margin: 0 auto 21px auto;
+  @include wh(280px);
+  margin: 0 auto 73px auto;
 
-    @media (min-width: $tablet-width) {
-        margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
+
