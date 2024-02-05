@@ -1,0 +1,9 @@
+.map {
+  @include wh (320px,362px);
+}
+
+.map iframe {
+  @include wh (100%,100%);
+  display: block;
+  border: none;
+}
