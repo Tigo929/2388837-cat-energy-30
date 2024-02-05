@@ -1,9 +1,20 @@
 .map {
-  @include wh (320px,362px);
-}
+  @include wh (320px, 362px);
+  background-image:
+    image-set(url("../../images/map/phone-bg-map@1x.webp") 1x,
+      url("../../images/map/phone-bg-map@2x.webp") 2x);
 
-.map iframe {
-  @include wh (100%,100%);
-  display: block;
-  border: none;
+  @media (min-width: $tablet-width) {
+    @include wh (768px, 400px);
+    background-image:
+      image-set(url('../../images/map/tablet-bg-map@1x.webp') 1x,
+        url('../../images/map/tablet-bg-map@2x.webp') 2x);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include wh (1440px, 400px);
+    background-image:
+      image-set(url("../../images/map/desktop-bg-map@1x.webp") 1x,
+        url("../../images/map/desktop-bg-map@2x.webp") 2x);
+  }
 }

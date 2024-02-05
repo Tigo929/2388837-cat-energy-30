@@ -1,111 +1,106 @@
 .what-works__title {
-    @include wh(280px);
-    margin: 0 auto 41px auto;
+  @include wh(280px);
+  margin: 0 auto 41px auto;
 
-    @media (min-width: $tablet-width) {
-        margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        margin: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .what-works__list {
-    @include wh(280px);
-    display: grid;
-    gap: 21px;
+  @include wh(280px);
+  display: grid;
+  gap: 21px;
 
-    @media (min-width: $tablet-width) {
-    }
+  @media (min-width: $tablet-width) {}
 
-    @media (min-width: $desktop-width) {
-    }
+  @media (min-width: $desktop-width) {}
 }
 
 
 .what-works__item {
-    @include wh(280px);
-    margin-left: auto;
+  @include wh(280px);
+  margin-left: auto;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
-    }
+  }
 }
 
 .what-works__desc {
-    @include wh(280px);
-    display: grid;
-    grid-template-columns: 80px 200px;
+  @include wh(280px);
+  display: grid;
+  grid-template-columns: 80px 200px;
 
-    @media (min-width: $tablet-width) {
-    }
+  @media (min-width: $tablet-width) {}
 
-    @media (min-width: $desktop-width) {
-    }
+  @media (min-width: $desktop-width) {}
 }
 
 .what-works--leaf::before {
-    content: "";
-    @include wh(60px,60px);
-    @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-leaf'), 60px 60px, center center);
-    display: block;
-    
-    @media (min-width: $tablet-width) {
-        content: none;
-    }
+  content: "";
+  @include wh(60px, 60px);
+  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-leaf'), 60px 60px, center center);
+  display: block;
 
-    @media (min-width: $desktop-width) {
-        content: none;
-    }
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
 
 .what-works--powder::before {
-    content: "";
-    @include wh(60px,60px);
-    @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-powder'), 60px 60px, center center);
-    display: block;
-    
-    @media (min-width: $tablet-width) {
-        content: none;
-    }
+  content: "";
+  @include wh(60px, 60px);
+  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-powder'), 60px 60px, center center);
+  display: block;
 
-    @media (min-width: $desktop-width) {
-        content: none;
-    }
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
 
 .what-works--eat::before {
-    content: "";
-    @include wh(60px,60px);
-    @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-eat'), 60px 60px, center center);
-    display: block;
-    
-    @media (min-width: $tablet-width) {
-        content: none;
-    }
+  content: "";
+  @include wh(60px, 60px);
+  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-eat'), 60px 60px, center center);
+  display: block;
 
-    @media (min-width: $desktop-width) {
-        content: none;
-    }
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
 
 .what-works--time::before {
-    content: "";
-    @include wh(60px,60px);
-    @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-time'), 60px 60px, center center);
-    display: block;
-    
-    @media (min-width: $tablet-width) {
-        content: none;
-    }
+  content: "";
+  @include wh(60px, 60px);
+  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-time'), 60px 60px, center center);
+  display: block;
 
-    @media (min-width: $desktop-width) {
-        content: none;
-    }
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
-

@@ -62,6 +62,7 @@
 
 .living-example__desc-title {
   @include font (12px,100%,center);
+  font-family: "Lato", sans-serif;
   background-color: $bg-section;
   position: absolute;
 

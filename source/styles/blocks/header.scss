@@ -16,7 +16,7 @@
 .header::after {
   content: "";
   @include wh(100%, 315px);
-  background-image: linear-gradient($bg-green, $bg-green),-webkit-image-set(
+  background-image: linear-gradient($bg-green, $bg-green), -webkit-image-set(
     url('../../images/functional-eat/phone-bg-cat@1x.webp') 1x,
     url('../../images/functional-eat/phone-bg-cat@2x.webp') 2x);
   background-repeat: no-repeat;
