@@ -1,10 +1,8 @@
-.welcome-deller {
-  padding: 27px 0 27px 0;
-}
 
 .welcome-deller__global-wrapper {
   @include wh(280px);
   margin: 0 auto;
+  padding: 27px 0 25px 0;
   display: grid;
   grid-template-columns: 140px 140px;
 

@@ -18,9 +18,7 @@
 
 .advantages__item {
   @include wh(280px);
-  padding: 26px 2px 20px 20px;
   background-color: $bg-silver;
-
 }
 
 .advantages__item-title {
@@ -43,9 +41,9 @@
 }
 
 .advantages--loss-title::before {
-  content: "";
   @include bg-img (('../../images/icons/stack.svg#advantages_phone-green-circle-slimming'), 50px 53px, top left);
   @include wh(50px, 53px);
+  content: "";
   margin: 0 21px 0 0;
   display: inline-block;
 
@@ -77,14 +75,18 @@
   }
 }
 
+.advantages--loss-item {
+  padding: 23px 33px 17px 20px;
+}
+
 .advantages--mass-item {
-  padding: 20px 48px 17px 13px;
+  padding: 24px 48px 17px 13px;
 }
 
 .advantages--mass-title::before {
-  content: "";
   @include bg-img (('../../images/icons/stack.svg#advantages_phone-green-circle-mass'), 69px 54px, top left);
   @include wh(69px, 54px);
+  content: "";
   margin: 0 9px 0 0;
   display: inline-block;
 
@@ -107,14 +109,13 @@
 }
 
 .advantages--mass-desc {
-  @include wh(250px);
+  @include wh(247px);
   padding: 0 0 0 6px;
 }
 
 .advantages__link-catalog::before {
-  content: "";
   @include wh(100%);
-  margin: 0 0 16px 0;
+  content: "";
   display: block;
   border-bottom: 1px solid $bg-border;
 
@@ -127,10 +128,24 @@
   }
 }
 
+.advantages__link-catalog--loss::before {
+  margin: 0 0 19px 0;
+}
+
+.advantages__link-catalog--mass {
+  padding-left: 6px;
+  display: block;
+  text-align: left;
+}
+
+.advantages__link-catalog--mass::before {
+  margin: 0 0 17px 0;
+}
+
 .advantages__link-catalog::after {
-  content: "";
   @include bg-img (('../../images/icons/stack.svg#advantages_phone-row-right'), 60px 15px, center center);
   @include wh(30px, 15px);
+  content: "";
   margin: 0 0 0 17px;
   display: inline-block;
 

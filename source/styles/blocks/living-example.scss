@@ -1,10 +1,9 @@
 .living-example {
   position: relative;
-  padding: 0 0 19px 0;
 }
 
 .living-example::after {
-  @include wh (100%,100%);
+  @include wh (100%, 100%);
   content: "";
   background-color: $bg-section;
   position: absolute;
@@ -14,7 +13,8 @@
 
 .living-example__global-wrapper {
   @include wh(280px);
-  margin: 0 auto 21px auto;
+  margin: 0 auto 40px auto;
+  padding: 25px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -27,20 +27,19 @@
 
 .living-example__title {
   @include wh(263px);
-  margin: 0 auto 39px auto;
+  margin: 0 0 40px 0;
 }
 
 .living-example__desc {
-  @include wh(290px);
+  @include wh(287px);
   margin: 0 0 19px 0;
-  padding: 0 0 0 7px;
 }
 
 .living-example__container {
   display: grid;
   grid-template-columns: 124px 124px;
   gap: 32px;
-  width: 265px;
+  width: 280px;
   margin: 0 auto 34px auto;
 }
 
@@ -53,7 +52,7 @@
 }
 
 .living-example__small-title {
-  @include font (24px,24px,left);
+  @include font (24px, 24px, left);
   height: 100%;
   display: grid;
   align-items: center;
@@ -61,7 +60,7 @@
 }
 
 .living-example__desc-title {
-  @include font (12px,100%,center);
+  @include font (12px, 100%, center);
   font-family: "Lato", sans-serif;
   background-color: $bg-section;
   position: absolute;
@@ -90,8 +89,7 @@
 }
 
 .living-example__price-desc {
-  @include font (14px,20px);
+  @include font (14px, 20px);
   @include wh (202px);
   margin: 0 auto 20px auto;
-  padding: 0 0 0 16px;
 }

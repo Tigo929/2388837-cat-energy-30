@@ -1,80 +1,81 @@
 .functional-eat {
-    padding: 27px 0 0 0;
+  padding: 27px 0 0 0;
 
-    @media (min-width: $tablet-width) {
-        padding: 0;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 
-    @media (min-width: $desktop-width) {
-        padding: 0;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
-.functional-eat__title{
-    @include wh (320px);
-    margin: 0 auto 26px auto;
-    color: $color-white;
+.functional-eat__title {
+  @include wh (320px);
+  margin: 0 auto 26px auto;
+  color: $color-white;
 
-    @media (min-width: $tablet-width) {
-        @include wh (494px);
-        margin: 0;
-        color: none;
-    }
+  @media (min-width: $tablet-width) {
+    @include wh (494px);
+    margin: 0;
+    color: none;
+  }
 
-    @media (min-width: $desktop-width) {
-        @include wh (494px);
-        margin: 0;
-        color: none;
-    }
+  @media (min-width: $desktop-width) {
+    @include wh (494px);
+    margin: 0;
+    color: none;
+  }
 }
 
 .functional-eat__desc {
-    @include wh (226px);
-    margin: 0 auto 27px auto;
-    color: $color-white;
+  @include wh (226px);
+  margin: 0 auto 27px auto;
+  color: $color-white;
 
-    @media (min-width: $tablet-width) {
-        @include wh (283px);
-        margin: 0;
-        color: none;
-    }
+  @media (min-width: $tablet-width) {
+    @include wh (283px);
+    margin: 0;
+    color: none;
+  }
 
-    @media (min-width: $desktop-width) {
-        @include wh (283px);
-        margin: 0;
-        color: none;
-    }
+  @media (min-width: $desktop-width) {
+    @include wh (283px);
+    margin: 0;
+    color: none;
+  }
 }
 
 .functional-eat__img-product {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
-    }
+  }
 }
 
 .functional-eat__btn-link {
-    @include wh(280px);
-    margin: 0 auto;
-    padding: 15px 0 9px 0px;
-    display: block;
+  @include wh(280px);
+  margin: 0 auto;
+  padding: 15px 0 9px 0;
+  display: block;
+  color: $color-white;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     @include wh(auto);
     margin: 0;
     padding: 0;
     display: block;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     @include wh(auto);
     margin: 0;
     padding: 0;
     display: block;
-    }
+  }
 }

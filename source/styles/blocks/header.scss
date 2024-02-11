@@ -14,15 +14,13 @@
 }
 
 .header::after {
-  content: "";
   @include wh(100%, 315px);
-  background-image: linear-gradient($bg-green, $bg-green), -webkit-image-set(
-    url('../../images/functional-eat/phone-bg-cat@1x.webp') 1x,
-    url('../../images/functional-eat/phone-bg-cat@2x.webp') 2x);
+  content: "";
+  background-image: linear-gradient($bg-green, $bg-green), image-set(url('../../images/functional-eat/phone-bg-cat@1x.webp') 1x,
+      url('../../images/functional-eat/phone-bg-cat@2x.webp') 2x);
   background-repeat: no-repeat;
-  background-position: center;
   position: absolute;
-  background-position: 0px 14px, center 13px;
+  background-position: 0 14px, center 14px;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
@@ -35,9 +33,8 @@
 }
 
 .header__global-wrapper {
-  @include wh(295px);
+  @include wh(280px);
   margin: 0 auto;
-  padding: 0 0 0 16px;
   display: flex;
   align-items: center;
 
@@ -91,4 +88,3 @@
     display: none;
   }
 }
-
