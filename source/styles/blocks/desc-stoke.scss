@@ -1,5 +1,11 @@
-.desc-stoke{
-    @include font (14px,18px,left);
+.desc-stoke {
+  @include font (14px, 18px, left);
+  font-family: "Lato", sans-serif;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    @include font (16px, 24px, left);
     font-family: "Lato", sans-serif;
     text-transform: none;
+  }
 }

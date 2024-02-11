@@ -1,12 +1,38 @@
-.functional-eat {
+.functional-eat__global-wrapper {
+  margin: 0;
   padding: 27px 0 0 0;
 
   @media (min-width: $tablet-width) {
+    @include wh (709px, 809px);
+    margin: 0 auto;
     padding: 0;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+.functional-eat__small-wrapper {
+  @media (min-width: $tablet-width) {
+    @include wh (528px);
+    margin: 0 auto 49px auto;
+    text-align: left;
+  }
+}
+
+.functional-eat__img-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.functional-eat__wrapper-link {
+  @media (min-width: $tablet-width) {
+    @include wh (528px);
+    margin: 0 auto;
   }
 }
 
@@ -16,9 +42,10 @@
   color: $color-white;
 
   @media (min-width: $tablet-width) {
-    @include wh (494px);
-    margin: 0;
-    color: none;
+    @include wh (524px);
+    margin: 0 0 40px 0;
+    color: $color-title;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +63,7 @@
   @media (min-width: $tablet-width) {
     @include wh (283px);
     margin: 0;
-    color: none;
+    color: $color-title;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,9 +75,12 @@
 
 .functional-eat__img-product {
   margin: 0 auto;
+  position: static;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    position: absolute;
+    top: -30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,12 +93,14 @@
   margin: 0 auto;
   padding: 15px 0 9px 0;
   display: block;
-  color: $color-white;
+  color: $color-title;
 
   @media (min-width: $tablet-width) {
-    @include wh(auto);
+    @include wh(244px,54px);
+    @include font (20px, 26px);
     margin: 0;
-    padding: 0;
+    padding-inline: 14px;
+    color: $color-white;
     display: block;
   }
 

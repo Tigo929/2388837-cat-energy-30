@@ -1,11 +1,50 @@
 .nav {
-    display: none;
+  @include font (16px, 20px);
+  display: none;
 
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
+    @include font (18px, 24px);
+    color: $color-title;
     display: block;
-    }
+  }
 
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: block;
-    }
+  }
+}
+
+.nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.nav__item__linck {
+  @include font (inherit,inherit);
+  position: relative;
+}
+
+.nav__item--afctive::after {
+  content: none;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -9px;
+    border-bottom: 2px solid $bg-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

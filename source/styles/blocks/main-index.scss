@@ -15,16 +15,7 @@
 }
 
 .main-index__advantages {
-  @include wh(280px);
-  margin: 0 auto 24px auto;
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-  }
 }
 
 .main-index__what-works {

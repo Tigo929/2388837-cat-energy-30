@@ -1,3 +1,17 @@
+.advantages__global-wrapper {
+  @include wh(280px);
+  margin: 0 auto 24px auto;
+
+  @media (min-width: $tablet-width) {
+    @include wh(708px);
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -19,6 +33,10 @@
 .advantages__item {
   @include wh(280px);
   background-color: $bg-silver;
+
+  @media (min-width: $tablet-width) {
+    @include wh(708px);
+  }
 }
 
 .advantages__item-title {
@@ -28,9 +46,9 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    // @include font ();
-    @include wh(auto);
-    margin: 0;
+    @include font (36px, 36px,left);
+    margin: 0 0 21px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,18 +59,14 @@
 }
 
 .advantages--loss-title::before {
-  @include bg-img (('../../images/icons/stack.svg#advantages_phone-green-circle-slimming'), 50px 53px, top left);
+  @include bg-img (("../../images/icons/stack.svg#advantages_phone-green-circle-slimming"), 50px 53px, top left);
   @include wh(50px, 53px);
   content: "";
   margin: 0 21px 0 0;
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    // content: "";
-    // @include bg-img ( ('../../images/icons/stack.svg#advantages_phone-green-circle-slimming'), 50px 53px, top left);
-    // @include wh(50px,53px);
-    // margin: 0 21px 0 0;
-    // display: inline-block;
+    content: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +119,13 @@
 }
 
 .advantages--loss-desc {
+  @include wh(227px);
   margin: 0 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    @include wh(340px);
+    margin: 0;
+  }
 }
 
 .advantages--mass-desc {

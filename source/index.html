@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header__index">
     <div class="header__global-wrapper">
       <picture>
         <source media="(min-width:1440px)" srcset="images/icons/header/desktop-header-icon-logo.svg" width="70"
@@ -40,67 +40,78 @@
       </button>
       <nav class="header__nav normalize nav">
         <ul class="nav__list normalize">
-          <li class="nav__item">главная</li>
-          <li class="nav__item">каталог продукции</li>
-          <li class="nav__item">подбор программы</li>
+          <li class="nav__item "><a class="nav__item__linck nav__item--afctive link-stoke" href="#">главная</a></li>
+          <li class="nav__item"><a class="nav__item__linck link-stoke" href="#">каталог продукции</a></li>
+          <li class="nav__item"><a class="nav__item__linck link-stoke" href="#">подбор программы</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main-index main__index">
-    <section class="main-index__functional-eat functional-eat ">
-      <h1 class="functional-eat__title title normalize">Функциональное питание для котов</h1>
-      <p class="functional-eat__desc desck-size-height normalize">Занялся собой? Займись котом!</p>
+    <section class="main-index__functional-eat functional-eat">
+      <div class="functional-eat__global-wrapper">
+        <div class="functional-eat__small-wrapper">
+          <h1 class="functional-eat__title title normalize">Функциональное питание для котов</h1>
+          <p class="functional-eat__desc desck-size-height normalize">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="functional-eat__img-wrapper">
+          <picture>
+            <source media="(min-width:1440px)" srcset="
+                images/functional-eat/desktop-product-cat-energy@1x.webp 1x,
+                images/functional-eat/desktop-product-cat-energy@2x.webp 2x
+              " width="552" height="499" type="image/webp" />
 
-      <picture>
-        <source media="(min-width:1440px)" srcset="
-              images/functional-eat/desktop-product-cat-energy@1x.webp 1x,
-              images/functional-eat/desktop-product-cat-energy@2x.webp 2x
-            " width="552" height="499" type="image/webp" />
+            <source media="(min-width:768px)" srcset="
+                images/functional-eat/tablet-product-cat-energy@1x.webp 1x,
+                images/functional-eat/tablet-product-cat-energy@2x.webp 2x
+              " width="709" height="609" type="image/webp" />
 
-        <source media="(min-width:768px)" srcset="
-              images/functional-eat/tablet-product-cat-energy@1x.webp 1x,
-              images/functional-eat/tablet-product-cat-energy@2x.webp 2x
-            " width="709" height="609" type="image/webp" />
-
-        <img class="functional-eat__img-product" src="images/functional-eat/phone-product-cat-energy@1x.webp "
-          srcset="images/functional-eat/phone-product-cat-energy@2x.webp 2x" width="280" height="273"
-          alt=" Product CAT ENERGY Pro Chicken" />
-      </picture>
-      <a class="functional-eat__btn-link link-stoke btn-stoke" href="#"
-        aria-label="Ссылка на подбор программы">подобрать программу</a>
+            <img class="functional-eat__img-product" src="images/functional-eat/phone-product-cat-energy@1x.webp "
+              srcset="images/functional-eat/phone-product-cat-energy@2x.webp 2x" width="280" height="273"
+              alt=" Product CAT ENERGY Pro Chicken" />
+          </picture>
+        </div>
+        <div class="functional-eat__wrapper-link">
+          <a class="functional-eat__btn-link link-stoke btn-stoke" href="#"
+            aria-label="Ссылка на подбор программы">подобрать программу</a>
+        </div>
+      </div>
     </section>
 
     <section class="main-index__advantages advantages">
-      <h2 class="advantages__title  subtitle visually-hidden subtitle normalize">
-        Список премуществ нашего товара
-      </h2>
-      <ul class="advantages__list normalize">
-        <li class="advantages__item advantages--loss-item">
-          <h3 class="advantages__item-title advantages--loss-title color-title  normalize">похудение</h3>
-          <p class="advantages__desc advantages--loss-desc desc-stoke normalize">
-            Ваш кот весит больше собаки и
-            почти утратил способность лазить
-            по деревьям? Пора на диету! Cat
-            Energy Slim поможет вашему
-            питомцу сбросить лишний вес.
-          </p>
-          <a class="advantages__link-catalog advantages__link-catalog--loss link-stoke" href="#" aria-label="Ссылка на каталог продукции">каталог
-            slim</a>
-        </li>
-        <li class="advantages__item advantages--mass-item">
-          <h3 class="advantages__item-title advantages--mass-title color-title  normalize">Набор массы</h3>
-          <p class="advantages__desc advantages--mass-desc desc-stoke normalize">
-            Заработать авторитет среди
-            дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет
-            вашему коту нарастить
-            необходимые мышцы!
-          </p>
-          <a class="advantages__link-catalog advantages__link-catalog--mass link-stoke" href="#" aria-label="Ссфлка на каталог продукции">каталог
-            pro</a>
-        </li>
-      </ul>
+      <div class="advantages__global-wrapper">
+        <h2 class="advantages__title  subtitle visually-hidden subtitle normalize">
+          Список премуществ нашего товара
+        </h2>
+        <ul class="advantages__list normalize">
+          <li class="advantages__item advantages--loss-item">
+            <h3 class="advantages__item-title advantages--loss-title color-title  normalize">похудение</h3>
+            <p class="advantages__desc advantages--loss-desc desc-stoke normalize">
+              Ваш кот весит больше собаки и
+              почти утратил способность лазить
+              по деревьям? Пора на диету! Cat
+              Energy Slim поможет вашему
+              питомцу сбросить лишний вес.
+            </p>
+            <a class="advantages__link-catalog advantages__link-catalog--loss link-stoke" href="#"
+              aria-label="Ссылка на каталог продукции">каталог
+              slim</a>
+          </li>
+          <li class="advantages__item advantages--mass-item">
+            <h3 class="advantages__item-title advantages--mass-title color-title  normalize">Набор массы</h3>
+            <p class="advantages__desc advantages--mass-desc desc-stoke normalize">
+              Заработать авторитет среди
+              дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет
+              вашему коту нарастить
+              необходимые мышцы!
+            </p>
+            <a class="advantages__link-catalog advantages__link-catalog--mass link-stoke" href="#"
+              aria-label="Ссфлка на каталог продукции">каталог
+              pro</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="main-index__what-works what-works">
       <h2 class="what-works__title subtitle color-title  normalize">
@@ -186,55 +197,55 @@
       <div class="welcome-deller__global-wrapper">
         <h2 class="welcome-deller__title visually-hidden subtitle normalize">Приглшаем на работу</h2>
         <p class="welcome-deller__desc normalize">
-            <span class="welcome-deller__span-welcome">приглашаем</span>
-            к сотрудничеству
-            дилеров!
-          </p>
-          <address class="welcome-deller__adress">
-              ул. Большая
-              Конюшенная, д. 19/8
-              Санкт-Петербург
-          </address>
-        </div>
-      </section>
-      <section class="main-index__map map" id="map">
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__global-wrapper">
-        <div class="footer__wrapper-logo-text">
-          <img class="footer__logo-text" width="128" height="24" src="images/icons/footer/footer-text-logo.svg"
+          <span class="welcome-deller__span-welcome">приглашаем</span>
+          к сотрудничеству
+          дилеров!
+        </p>
+        <address class="welcome-deller__adress">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+      </div>
+    </section>
+    <section class="main-index__map map" id="map">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__global-wrapper">
+      <div class="footer__wrapper-logo-text">
+        <img class="footer__logo-text" width="128" height="24" src="images/icons/footer/footer-text-logo.svg"
           alt="text logo CAT ENERGY">
-        </div>
-        <div class="footer__wrapper-list-social">
-          <ul class="footer__list-social normalize">
-            <li class="footer__item-social">
-              <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка на социальную сеть в вконтакте">
-                <img class="footer__img-social" src="images/icons/footer/social-vk.svg" width="28" height="22"
+      </div>
+      <div class="footer__wrapper-list-social">
+        <ul class="footer__list-social normalize">
+          <li class="footer__item-social">
+            <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка на социальную сеть в вконтакте">
+              <img class="footer__img-social" src="images/icons/footer/social-vk.svg" width="28" height="22"
                 alt="Ссылка на ВК">
-              </a>
-            </li>
-            <li class="footer__item-social">
-              <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка Ютуб канал">
-                <img class="footer__img-social" src="images/icons/footer/social-yu.svg" width="28" height="22"
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка Ютуб канал">
+              <img class="footer__img-social" src="images/icons/footer/social-yu.svg" width="28" height="22"
                 alt="Ссылка на Ютуб">
-              </a>
-            </li>
-            <li class="footer__item-social">
-              <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка на Телеграмм">
-                <img class="footer__img-social" src="images/icons/footer/social-tg.svg" width="28" height="22"
+            </a>
+          </li>
+          <li class="footer__item-social">
+            <a class="footer__link-social link-stoke" href="#" aria-label="Ссылка на Телеграмм">
+              <img class="footer__img-social" src="images/icons/footer/social-tg.svg" width="28" height="22"
                 alt="Ссылка на Телеграмм">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__wrapper-logo-html">
-          <p class="footer__logo-html normalize">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper-logo-html">
+        <p class="footer__logo-html normalize">
           HTML Academy
-          </p>
-          <img class="footer__img-logo-html" src="images/icons/footer/footer-logo-html-academy.svg" width="27" height="34"
+        </p>
+        <img class="footer__img-logo-html" src="images/icons/footer/footer-logo-html-academy.svg" width="27" height="34"
           alt="logo html-academy">
-        </div>
+      </div>
     </div>
   </footer>
 </body>
