@@ -1,1 +1,18 @@
-<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#68B738" d="M0 0h60v60h-60z"/></svg>
+<svg width="60.000000" height="60.000000" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip130_911">
+			<rect id="icon_leaf" width="30.000000" height="32.000000" transform="translate(15.000000 14.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="phone-green-box-leaf" width="60.000000" height="60.000000" fill="#68B738" fill-opacity="1.000000"/>
+	<rect id="icon_leaf" width="30.000000" height="32.000000" transform="translate(15.000000 14.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip130_911)">
+		<path id="Vector" d="M623.438 151.999L647.812 151.999L647.812 169.999L634.688 169.999" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M627.188 169.999L623.438 169.999L623.438 155.999" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M634.688 170L627.188 176L627.188 170" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M42.8437 16.767C42.7434 16.317 42.3647 16 41.9325 16C41.9306 16 41.9287 16 41.9269 16C36.989 16.033 24.9815 16.916 20.1337 24.38C17.6156 28.2581 17.399 33.293 19.4897 39.345C19.5056 39.392 19.5384 39.424 19.56 39.467C18.8128 41.4399 18.5231 42.7531 18.5156 42.79C18.4069 43.33 18.7303 43.8621 19.2365 43.978C19.3022 43.993 19.3678 44 19.4334 44C19.8656 44 20.2547 43.679 20.3494 43.21C20.369 43.108 22.7578 32.837 31.2028 26.832C31.6341 26.526 31.7503 25.905 31.4625 25.4449C31.1747 24.985 30.5934 24.86 30.1622 25.168C25.3734 28.573 22.424 33.176 20.6897 36.824C19.4484 32.246 19.7737 28.447 21.6759 25.519C25.4194 19.755 34.2984 18.365 39.6581 18.071C38.505 19.8719 37.245 23.174 37.245 29C37.245 32.12 36.4153 34.522 34.7803 36.14C32.1591 38.731 27.9009 38.974 24.7866 38.724C24.269 38.679 23.82 39.095 23.7806 39.646C23.7412 40.196 24.1284 40.676 24.644 40.718C25.2675 40.769 25.9331 40.8 26.625 40.8C29.7956 40.8 33.494 40.137 36.0544 37.606C38.0887 35.595 39.12 32.7 39.12 29.001C39.12 19.902 42.3356 17.905 42.3515 17.896C42.7415 17.687 42.9459 17.219 42.8437 16.767Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

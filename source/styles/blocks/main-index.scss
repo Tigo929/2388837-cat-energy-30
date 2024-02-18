@@ -14,20 +14,16 @@
   }
 }
 
-.main-index__advantages {
-
-}
-
 .main-index__what-works {
   @include wh(280px);
   margin: 0 auto 45px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    @include wh(768px);
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
   }
 }
-

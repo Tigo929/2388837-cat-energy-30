@@ -1,9 +1,22 @@
-.what-works__title {
+.what-works__global-wrapper {
   @include wh(280px);
-  margin: 0 auto 41px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    @include wh(708px);
+    margin-inline: auto;
+    padding: 45px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
+.what-works__title {
+  @include wh(280px);
+  margin: 0 auto 40px auto;
+
+  @media (min-width: $tablet-width) {
+    @include wh(375px);
+    margin: 0 0 73px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,16 +27,19 @@
 .what-works__list {
   @include wh(280px);
   display: grid;
-  gap: 21px;
+  gap: 20px;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 247px 246px;
+    column-gap: 137px;
+    row-gap: 36px;
+  }
 
   @media (min-width: $desktop-width) {}
 }
 
 
 .what-works__item {
-  @include wh(280px);
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
@@ -35,24 +51,73 @@
   }
 }
 
+.what-works--item-leaf {
+  @media (min-width: $tablet-width) {
+    @include bg-img (("../../images/icons/stack.svg#what-works_tablet-bg-one"), 83px 229px, 120px -2px);
+  }
+}
+
+.what-works--item-powder {
+  @media (min-width: $tablet-width) {
+    @include bg-img (("../../images/icons/stack.svg#what-works_tablet-bg-two"), 115px 229px, 121px -4px);
+  }
+}
+
+.what-works--item-eat {
+  @media (min-width: $tablet-width) {
+    @include bg-img (("../../images/icons/stack.svg#what-works_tablet-bg-three"), 115px 234px, 121px -4px);
+  }
+}
+
+.what-works--item-time {
+  @media (min-width: $tablet-width) {
+    @include bg-img (("../../images/icons/stack.svg#what-works_tablet-bg-four"), 127px 232px, 121px -4px);
+  }
+}
+
+.what-works--item-powder {
+  @media (min-width: $tablet-width) {
+    @include wh(246px, 280px);
+  }
+}
+
+.what-works--item-eat {
+  @media (min-width: $tablet-width) {
+    @include wh(247px, 280px);
+  }
+}
+
+.what-works--item-time {
+  @media (min-width: $tablet-width) {
+    @include wh(247px, 280px);
+  }
+}
+
 .what-works__desc {
   @include wh(280px);
   display: grid;
   grid-template-columns: 80px 200px;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $tablet-width) {
+    @include wh(204px);
+    display: block;
+  }
 
   @media (min-width: $desktop-width) {}
 }
 
 .what-works--leaf::before {
-  content: "";
   @include wh(60px, 60px);
-  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-leaf'), 60px 60px, center center);
+  @include bg-img (("../../images/icons/stack.svg#what-works_phone-green-box-leaf"), 60px 60px, center center);
+  content: "";
   display: block;
 
   @media (min-width: $tablet-width) {
-    content: none;
+    @include wh(80px, 80px);
+    @include bg-img (("../../images/icons/stack.svg#what-works_desktop-green-box-leaf"), 80px 80px, center center);
+    content: "";
+    margin: 0 0 31px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,14 +125,24 @@
   }
 }
 
+.what-works--powder {
+  @media (min-width: $tablet-width) {
+    @include wh(224px);
+  }
+}
+
 .what-works--powder::before {
-  content: "";
   @include wh(60px, 60px);
-  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-powder'), 60px 60px, center center);
+  @include bg-img (("../../images/icons/stack.svg#what-works_phone-green-box-powder"), 60px 60px, center center);
+  content: "";
   display: block;
 
   @media (min-width: $tablet-width) {
-    content: none;
+    @include wh(80px, 80px);
+    @include bg-img (("../../images/icons/stack.svg#what-works_desktop-green-box-powder"), 80px 80px, center center);
+    content: "";
+    margin: 0 0 31px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,13 +151,17 @@
 }
 
 .what-works--eat::before {
-  content: "";
   @include wh(60px, 60px);
-  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-eat'), 60px 60px, center center);
+  @include bg-img (("../../images/icons/stack.svg#what-works_phone-green-box-eat"), 60px 60px, center center);
+  content: "";
   display: block;
 
   @media (min-width: $tablet-width) {
-    content: none;
+    @include wh(80px, 80px);
+    @include bg-img (("../../images/icons/stack.svg#what-works_desktop-green-box-eat"), 80px 80px, center center);
+    content: "";
+    margin: 0 0 31px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,14 +169,32 @@
   }
 }
 
+.what-works__desc-span {
+  display: contents;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.what-works--time {
+  @media (min-width: $tablet-width) {
+    @include wh(242px);
+  }
+}
+
 .what-works--time::before {
-  content: "";
   @include wh(60px, 60px);
-  @include bg-img (('../../images/icons/stack.svg#what-works_desktop-green-box-time'), 60px 60px, center center);
+  @include bg-img (("../../images/icons/stack.svg#what-works_phone-green-box-time"), 60px 60px, center center);
+  content: "";
   display: block;
 
   @media (min-width: $tablet-width) {
-    content: none;
+    @include wh(80px, 80px);
+    @include bg-img (("../../images/icons/stack.svg#what-works_desktop-green-box-time"), 80px 80px, center center);
+    content: "";
+    margin: 0 0 31px 0;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
